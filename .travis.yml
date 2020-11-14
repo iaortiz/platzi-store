@@ -9,6 +9,15 @@ git:
   depth: 3
 script:
   - yarn build
+
+#Notificar a las personas relacionadas al proyecto
+notifications:
+  email:
+    recipientes: 
+      - isralejo21@hotmail.com
+  on_succes: always
+  on_failure: always
+
 deploy:
   provider: pages
   skip_cleanup: true
